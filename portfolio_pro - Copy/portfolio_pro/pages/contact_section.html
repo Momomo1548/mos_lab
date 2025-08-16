@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Portfolio Pro</title>
+    <meta name="description" content="Neem contact op met Portfolio Pro. Laten we samen uw volgende digitale project realiseren." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/overrides.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border-light">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_section.html" class="flex items-center space-x-2 group" aria-label="Portfolio Pro Home">
+                        <svg class="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 16L16 4L28 16L16 28L4 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16L16 12L20 16L16 20L12 16Z" fill="currentColor"/>
+                        </svg>
+                        <span class="font-heading font-bold text-xl text-primary">Portfolio Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="about_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Over Mij</a>
+                        <a href="projects_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projecten</a>
+                        <a href="contact_section.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-300" aria-current="page">Contact</a>
+                        <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Stijlgids</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-300" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open hoofdmenu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                    <a href="hero_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Home</a>
+                    <a href="about_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Over Mij</a>
+                    <a href="projects_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Projecten</a>
+                    <a href="contact_section.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base" aria-current="page">Contact</a>
+                    <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Stijlgids</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section id="contact" class="relative min-h-screen pt-24 pb-16 bg-gradient-to-br from-background via-surface to-primary-50" role="main">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="contactGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#contactGrid)"/>
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-slide-up">
+                    <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl mb-6">
+                        <span class="text-text-primary">Laten we</span>
+                        <span class="text-gradient block">samenwerken</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                        Klaar om uw volgende digitale project tot leven te brengen? Ik help graag bij het creëren van toegankelijke, 
+                        data-gedreven oplossingen die uw gebruikers inspireren.
+                    </p>
+                </div>
+
+                <!-- Dual Zone Layout -->
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                        <!-- Left Zone - Contact Information -->
+                        <div class="space-y-8 animate-slide-in-left">
+                            <!-- Contact Methods -->
+                            <div class="card">
+                                <h2 class="font-heading font-semibold text-2xl mb-6 text-text-primary">Neem Direct Contact Op</h2>
+                                
+                                <!-- Email Contact -->
+                                <div class="space-y-6">
+                                    <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-surface transition-colors duration-300">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="font-semibold text-text-primary mb-1">Email</h3>
+                                            <p class="text-text-secondary mb-2">Voor projectaanvragen en samenwerkingen</p>
+                                            <a href="mailto:hello@portfoliopro.nl" class="text-primary hover:text-primary-700 font-medium transition-colors duration-300">
+                                                hello@portfoliopro.nl
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- LinkedIn Contact -->
+                                    <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-surface transition-colors duration-300">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="font-semibold text-text-primary mb-1">LinkedIn</h3>
+                                            <p class="text-text-secondary mb-2">Professioneel netwerk en portfolio</p>
+                                            <a href="https://linkedin.com/in/portfoliopro" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-600 font-medium transition-colors duration-300">
+                                                linkedin.com/in/portfoliopro
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Resume Download -->
+                                    <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-surface transition-colors duration-300">
+                                        <div class="flex-shrink-0 w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="font-semibold text-text-primary mb-1">CV Download</h3>
+                                            <p class="text-text-secondary mb-2">Volledige ervaring en vaardigheden</p>
+                                            <a href="javascript:void(0)" class="text-success hover:text-success-600 font-medium transition-colors duration-300 inline-flex items-center">
+                                                <span>Download CV (PDF)</span>
+                                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Response Time -->
+                            <div class="card bg-gradient-to-r from-primary-50 to-accent-50 border-primary-100">
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-text-primary mb-1">Snelle Reactie</h3>
+                                        <p class="text-text-secondary">Ik reageer meestal binnen 24 uur op alle berichten</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Trust Signals -->
+                            <div class="space-y-4">
+                                <h3 class="font-heading font-semibold text-lg text-text-primary">Kwaliteitsgaranties</h3>
+                                <div class="flex flex-wrap gap-3">
+                                    <div class="flex items-center space-x-2 px-3 py-2 bg-success-50 text-success rounded-full text-sm border border-success-100">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>WCAG 2.2 AA</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 px-3 py-2 bg-primary-50 text-primary rounded-full text-sm border border-primary-100">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>90+ Lighthouse Score</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 px-3 py-2 bg-warning-50 text-warning rounded-full text-sm border border-warning-100">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>GDPR Compliant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Zone - Contact Form -->
+                        <div class="animate-slide-in-right">
+                            <div class="card">
+                                <h2 class="font-heading font-semibold text-2xl mb-6 text-text-primary">Stuur een Bericht</h2>
+                                
+                                <form id="contactForm" class="space-y-6" novalidate>
+                                    <!-- Name Field -->
+                                    <div>
+                                        <label for="name" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Naam <span class="text-error">*</span>
+                                        </label>
+                                        <input type="text" id="name" name="name" required class="input-field" placeholder="Uw volledige naam" aria-describedby="name-error" />
+                                        <div id="name-error" class="mt-1 text-sm text-error hidden" role="alert"></div>
+                                    </div>
+
+                                    <!-- Email Field -->
+                                    <div>
+                                        <label for="email" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Email <span class="text-error">*</span>
+                                        </label>
+                                        <input type="email" id="email" name="email" required class="input-field" placeholder="uw.email@voorbeeld.nl" aria-describedby="email-error" />
+                                        <div id="email-error" class="mt-1 text-sm text-error hidden" role="alert"></div>
+                                    </div>
+
+                                    <!-- Company Field -->
+                                    <div>
+                                        <label for="company" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Bedrijf
+                                        </label>
+                                        <input type="text" id="company" name="company" class="input-field" placeholder="Uw bedrijfsnaam (optioneel)" />
+                                    </div>
+
+                                    <!-- Project Type -->
+                                    <div>
+                                        <label for="projectType" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Project Type <span class="text-error">*</span>
+                                        </label>
+                                        <select id="projectType" name="projectType" required class="input-field" aria-describedby="project-error">
+                                            <option value>Selecteer project type</option>
+                                            <option value="website">Website Ontwerp & Ontwikkeling</option>
+                                            <option value="webapp">Web Applicatie</option>
+                                            <option value="redesign">Website Redesign</option>
+                                            <option value="consultation">UX/UI Consultatie</option>
+                                            <option value="accessibility">Toegankelijkheidsaudit</option>
+                                            <option value="other">Anders</option>
+                                        </select>
+                                        <div id="project-error" class="mt-1 text-sm text-error hidden" role="alert"></div>
+                                    </div>
+
+                                    <!-- Budget Range -->
+                                    <div>
+                                        <label for="budget" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Budget Indicatie
+                                        </label>
+                                        <select id="budget" name="budget" class="input-field">
+                                            <option value>Selecteer budget range</option>
+                                            <option value="5k-10k">€5.000 - €10.000</option>
+                                            <option value="10k-25k">€10.000 - €25.000</option>
+                                            <option value="25k-50k">€25.000 - €50.000</option>
+                                            <option value="50k+">€50.000+</option>
+                                            <option value="discuss">Liever bespreken</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Message Field -->
+                                    <div>
+                                        <label for="message" class="block text-sm font-semibold text-text-primary mb-2">
+                                            Bericht <span class="text-error">*</span>
+                                        </label>
+                                        <textarea id="message" name="message" required rows="5" class="input-field resize-none" placeholder="Vertel me over uw project, doelen en uitdagingen..." aria-describedby="message-error"></textarea>
+                                        <div id="message-error" class="mt-1 text-sm text-error hidden" role="alert"></div>
+                                    </div>
+
+                                    <!-- Privacy Checkbox -->
+                                    <div class="flex items-start space-x-3">
+                                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1 w-4 h-4 text-primary border-border rounded focus:ring-2 focus:ring-primary-500" aria-describedby="privacy-error" />
+                                        <label for="privacy" class="text-sm text-text-secondary leading-relaxed">
+                                            Ik ga akkoord met de verwerking van mijn gegevens volgens de 
+                                            <a href="javascript:void(0)" class="text-primary hover:text-primary-700 underline">privacyverklaring</a> 
+                                            en begrijp dat mijn gegevens alleen worden gebruikt voor het beantwoorden van mijn vraag.
+                                            <span class="text-error">*</span>
+                                        </label>
+                                        <div id="privacy-error" class="mt-1 text-sm text-error hidden" role="alert"></div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="pt-4">
+                                        <button type="submit" class="btn-accent w-full group relative overflow-hidden" id="submitBtn">
+                                            <span class="relative z-10 flex items-center justify-center">
+                                                <span id="submitText">Verstuur Bericht</span>
+                                                <svg id="submitIcon" class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                                </svg>
+                                                <svg id="loadingIcon" class="ml-2 w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24">
+                                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Success Message -->
+                                    <div id="successMessage" class="hidden p-4 bg-success-50 border border-success-100 rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <svg class="w-6 h-6 text-success flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                            <div>
+                                                <h3 class="font-semibold text-success">Bericht Verzonden!</h3>
+                                                <p class="text-sm text-success-600 mt-1">Bedankt voor uw bericht. Ik neem binnen 24 uur contact met u op.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Contact Info -->
+                <div class="mt-16 text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-text-primary mb-2">Locatie</h3>
+                                <p class="text-text-secondary">Amsterdam, Nederland</p>
+                                <p class="text-sm text-text-tertiary">Beschikbaar voor remote werk</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-text-primary mb-2">Beschikbaarheid</h3>
+                                <p class="text-text-secondary">Ma - Vr, 9:00 - 18:00</p>
+                                <p class="text-sm text-text-tertiary">CET/CEST tijdzone</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-12 h-12 bg-success-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-text-primary mb-2">Reactietijd</h3>
+                                <p class="text-text-secondary">Binnen 24 uur</p>
+                                <p class="text-sm text-text-tertiary">Meestal veel sneller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border-light py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 16L16 4L28 16L16 28L4 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16L16 12L20 16L16 20L12 16Z" fill="currentColor"/>
+                        </svg>
+                        <span class="font-heading font-bold text-xl text-primary">Portfolio Pro</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Waar creativiteit code ontmoet. Gespecialiseerd in toegankelijke, data-gedreven digitale ervaringen 
+                        die gebruikers inspireren en bedrijfsdoelen realiseren.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/portfoliopro" target="_blank" rel="noopener noreferrer" class="text-text-tertiary hover:text-primary transition-colors duration-300" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:hello@portfoliopro.nl" class="text-text-tertiary hover:text-primary transition-colors duration-300" aria-label="Email">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Column -->
+                <div>
+                    <h3 class="font-semibold text-text-primary mb-4">Navigatie</h3>
+                    <ul class="space-y-2">
+                        <li><a href="hero_section.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="about_section.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Over Mij</a></li>
+                        <li><a href="projects_section.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Projecten</a></li>
+                        <li><a href="contact_section.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div>
+                    <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-text-secondary">UI/UX Design</span></li>
+                        <li><span class="text-text-secondary">Frontend Development</span></li>
+                        <li><span class="text-text-secondary">Toegankelijkheidsaudit</span></li>
+                        <li><span class="text-text-secondary">Performance Optimalisatie</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-border-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-tertiary text-sm">
+                    © 2025 Portfolio Pro. Alle rechten voorbehouden.
+                </p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-text-tertiary text-sm">Gebouwd met toegankelijkheid in gedachten</span>
+                    <div class="flex space-x-2">
+                        <span class="px-2 py-1 bg-success-50 text-success text-xs rounded border border-success-100">WCAG AA</span>
+                        <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded border border-primary-100">90+ Score</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-modal opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 z-40" aria-label="Terug naar boven">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Back to top functionality
+            const backToTopButton = document.getElementById('backToTop');
+            
+            if (backToTopButton) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > window.innerHeight * 0.75) {
+                        backToTopButton.classList.remove('opacity-0', 'invisible');
+                        backToTopButton.classList.add('opacity-100', 'visible');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'invisible');
+                        backToTopButton.classList.remove('opacity-100', 'visible');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Form validation and submission
+            const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const submitIcon = document.getElementById('submitIcon');
+            const loadingIcon = document.getElementById('loadingIcon');
+            const successMessage = document.getElementById('successMessage');
+
+            // Validation functions
+            function validateField(field, errorElementId, validationFn) {
+                const errorElement = document.getElementById(errorElementId);
+                const isValid = validationFn(field.value.trim());
+                
+                if (isValid) {
+                    field.classList.remove('border-error');
+                    field.classList.add('border-success');
+                    errorElement.classList.add('hidden');
+                    errorElement.textContent = '';
+                } else {
+                    field.classList.remove('border-success');
+                    field.classList.add('border-error');
+                    errorElement.classList.remove('hidden');
+                }
+                
+                return isValid;
+            }
+
+            function validateName(value) {
+                return value.length >= 2;
+            }
+
+            function validateEmail(value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(value);
+            }
+
+            function validateMessage(value) {
+                return value.length >= 10;
+            }
+
+            function validateProjectType(value) {
+                return value !== '';
+            }
+
+            function validatePrivacy(checked) {
+                return checked;
+            }
+
+            // Real-time validation
+            const nameField = document.getElementById('name');
+            const emailField = document.getElementById('email');
+            const messageField = document.getElementById('message');
+            const projectTypeField = document.getElementById('projectType');
+            const privacyField = document.getElementById('privacy');
+
+            nameField.addEventListener('blur', function() {
+                if (!validateField(this, 'name-error', validateName)) {
+                    document.getElementById('name-error').textContent = 'Naam moet minimaal 2 karakters bevatten.';
+                }
+            });
+
+            emailField.addEventListener('blur', function() {
+                if (!validateField(this, 'email-error', validateEmail)) {
+                    document.getElementById('email-error').textContent = 'Voer een geldig emailadres in.';
+                }
+            });
+
+            messageField.addEventListener('blur', function() {
+                if (!validateField(this, 'message-error', validateMessage)) {
+                    document.getElementById('message-error').textContent = 'Bericht moet minimaal 10 karakters bevatten.';
+                }
+            });
+
+            projectTypeField.addEventListener('change', function() {
+                if (!validateField(this, 'project-error', validateProjectType)) {
+                    document.getElementById('project-error').textContent = 'Selecteer een project type.';
+                }
+            });
+
+            privacyField.addEventListener('change', function() {
+                const errorElement = document.getElementById('privacy-error');
+                if (!validatePrivacy(this.checked)) {
+                    errorElement.classList.remove('hidden');
+                    errorElement.textContent = 'U moet akkoord gaan met de privacyverklaring.';
+                } else {
+                    errorElement.classList.add('hidden');
+                    errorElement.textContent = '';
+                }
+            });
+
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Validate all fields
+                const isNameValid = validateField(nameField, 'name-error', validateName);
+                const isEmailValid = validateField(emailField, 'email-error', validateEmail);
+                const isMessageValid = validateField(messageField, 'message-error', validateMessage);
+                const isProjectTypeValid = validateField(projectTypeField, 'project-error', validateProjectType);
+                const isPrivacyValid = validatePrivacy(privacyField.checked);
+
+                if (!isNameValid) {
+                    document.getElementById('name-error').textContent = 'Naam moet minimaal 2 karakters bevatten.';
+                }
+                if (!isEmailValid) {
+                    document.getElementById('email-error').textContent = 'Voer een geldig emailadres in.';
+                }
+                if (!isMessageValid) {
+                    document.getElementById('message-error').textContent = 'Bericht moet minimaal 10 karakters bevatten.';
+                }
+                if (!isProjectTypeValid) {
+                    document.getElementById('project-error').textContent = 'Selecteer een project type.';
+                }
+                if (!isPrivacyValid) {
+                    const errorElement = document.getElementById('privacy-error');
+                    errorElement.classList.remove('hidden');
+                    errorElement.textContent = 'U moet akkoord gaan met de privacyverklaring.';
+                }
+
+                // If all fields are valid, simulate form submission
+                if (isNameValid && isEmailValid && isMessageValid && isProjectTypeValid && isPrivacyValid) {
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Verzenden...';
+                    submitIcon.classList.add('hidden');
+                    loadingIcon.classList.remove('hidden');
+
+                    // Simulate API call
+                    setTimeout(function() {
+                        // Hide loading state
+                        submitBtn.disabled = false;
+                        submitText.textContent = 'Verstuur Bericht';
+                        submitIcon.classList.remove('hidden');
+                        loadingIcon.classList.add('hidden');
+
+                        // Show success message
+                        successMessage.classList.remove('hidden');
+                        contactForm.classList.add('hidden');
+
+                        // Scroll to success message
+                        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                        // Reset form after delay
+                        setTimeout(function() {
+                            contactForm.reset();
+                            contactForm.classList.remove('hidden');
+                            successMessage.classList.add('hidden');
+                            
+                            // Remove validation classes
+                            const fields = [nameField, emailField, messageField, projectTypeField];
+                            fields.forEach(field => {
+                                field.classList.remove('border-success', 'border-error');
+                            });
+                        }, 5000);
+                    }, 2000);
+                } else {
+                    // Scroll to first error
+                    const firstError = document.querySelector('.border-error, #privacy-error:not(.hidden)');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Performance optimization for animations
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--transition-smooth', '0ms');
+            document.documentElement.style.setProperty('--transition-quick', '0ms');
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

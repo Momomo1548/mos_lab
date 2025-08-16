@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pro - Projecten</title>
+    <meta name="description" content="Ontdek mijn portfolio van innovatieve digitale projecten. Van UI/UX design tot frontend development en data visualisatie." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/overrides.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border-light">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_section.html" class="flex items-center space-x-2 group" aria-label="Portfolio Pro Home">
+                        <svg class="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 16L16 4L28 16L16 28L4 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16L16 12L20 16L16 20L12 16Z" fill="currentColor"/>
+                        </svg>
+                        <span class="font-heading font-bold text-xl text-primary">Portfolio Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="about_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Over Mij</a>
+                        <a href="projects_section.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-300" aria-current="page">Projecten</a>
+                        <a href="contact_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                        <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Stijlgids</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-300" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open hoofdmenu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                    <a href="hero_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Home</a>
+                    <a href="about_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Over Mij</a>
+                    <a href="projects_section.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base" aria-current="page">Projecten</a>
+                    <a href="contact_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Contact</a>
+                    <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Stijlgids</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Projects Hero Section -->
+        <section class="relative py-16 lg:py-24 bg-gradient-to-br from-surface via-background to-primary-50 overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="projectGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#projectGrid)"/>
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl mb-6">
+                        <span class="block text-text-primary">Mijn</span>
+                        <span class="block text-gradient">Projecten</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto mb-8 leading-relaxed">
+                        Een selectie van projecten die de kruising tussen creativiteit en technologie demonstreren. Van data-gedreven ontwerp tot toegankelijke implementatie.
+                    </p>
+                    
+                    <!-- Project Stats -->
+                    <div class="grid grid-cols-3 gap-8 max-w-md mx-auto">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">12+</div>
+                            <div class="text-sm text-text-tertiary">Projecten</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent">8</div>
+                            <div class="text-sm text-text-tertiary">Tevreden Klanten</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-success">100%</div>
+                            <div class="text-sm text-text-tertiary">Toegankelijk</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter & Projects Section -->
+        <section id="projects" class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12" role="tablist" aria-label="Project filters">
+                    <button class="filter-btn active px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" data-filter="all" role="tab" aria-selected="true" aria-controls="projects-grid">
+                        Alle Projecten
+                    </button>
+                    <button class="filter-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" data-filter="ui-ux" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        UI/UX Design
+                    </button>
+                    <button class="filter-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" data-filter="frontend" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Frontend
+                    </button>
+                    <button class="filter-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" data-filter="data-viz" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Data Visualisatie
+                    </button>
+                    <button class="filter-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" data-filter="accessibility" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Toegankelijkheid
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="tabpanel">
+                    <!-- New Project Card - Cosmic Figures Artwork -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="ui-ux" data-project="cosmic-figures" tabindex="0" role="button" aria-label="Open Cosmic Figures Artwork project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="../assets/images/IMG_0900-1755301505843.jpeg" alt="Cosmic Figures Artwork - Two mysterious figures with glowing eyes in a starry night sky" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-xs font-semibold">Artwork</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Cosmic Figures</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Een mystieke illustratie van twee figuren tegen een kosmische achtergrond, gecreëerd met aandacht voor detail en dramatische belichting.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Digital Art</span>
+                            <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">Illustration</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">Character Design</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2025</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 1 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="ui-ux frontend" data-project="ecommerce-dashboard" tabindex="0" role="button" aria-label="Open E-commerce Dashboard project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="E-commerce Dashboard Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-xs font-semibold">UI/UX</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">E-commerce Dashboard</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Een intuïtieve dashboard interface voor e-commerce beheer met real-time analytics en toegankelijke data visualisatie.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">React</span>
+                            <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">D3.js</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">WCAG AA</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2025</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="data-viz frontend" data-project="climate-tracker" tabindex="0" role="button" aria-label="Open Climate Data Tracker project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Climate Data Visualization Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-success text-white px-2 py-1 rounded text-xs font-semibold">Data Viz</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Climate Data Tracker</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Interactieve klimaatdata visualisatie met real-time updates en toegankelijke grafieken voor beleidsmakers.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Vue.js</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">Chart.js</span>
+                            <span class="px-2 py-1 bg-warning-50 text-warning text-xs rounded">API</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2024</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="accessibility ui-ux" data-project="inclusive-banking" tabindex="0" role="button" aria-label="Open Inclusive Banking App project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Inclusive Banking App Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-accent text-white px-2 py-1 rounded text-xs font-semibold">Toegankelijk</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Inclusive Banking App</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Een volledig toegankelijke banking app ontworpen voor gebruikers met verschillende beperkingen en behoeften.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">React Native</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">WCAG AAA</span>
+                            <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">Voice UI</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2024</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="frontend ui-ux" data-project="startup-website" tabindex="0" role="button" aria-label="Open Tech Startup Website project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Tech Startup Website Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-xs font-semibold">Frontend</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Tech Startup Website</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Een moderne, responsieve website voor een tech startup met focus op conversie en gebruikerservaring.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Next.js</span>
+                            <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">Tailwind</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">Framer Motion</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2024</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 5 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="data-viz accessibility" data-project="health-analytics" tabindex="0" role="button" aria-label="Open Health Analytics Dashboard project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_1280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Health Analytics Dashboard Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-success text-white px-2 py-1 rounded text-xs font-semibold">Analytics</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Health Analytics Dashboard</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Toegankelijke gezondheidsdata dashboard voor zorgverleners met real-time patiënt monitoring.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Angular</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">Highcharts</span>
+                            <span class="px-2 py-1 bg-warning-50 text-warning text-xs rounded">HIPAA</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2023</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 6 -->
+                    <article class="project-card card group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-modal" data-categories="ui-ux frontend accessibility" data-project="education-platform" tabindex="0" role="button" aria-label="Open Education Platform project details">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Education Platform Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 bg-accent text-white px-2 py-1 rounded text-xs font-semibold">Platform</div>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-2 group-hover:text-primary transition-colors duration-300">Education Platform</h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">Inclusief online leerplatform met adaptieve interface en ondersteuning voor diverse leerstijlen.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Vue.js</span>
+                            <span class="px-2 py-1 bg-success-50 text-success text-xs rounded">WCAG AA</span>
+                            <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">PWA</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-tertiary text-sm">2023</span>
+                            <svg class="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button class="btn-secondary inline-flex items-center group" id="loadMoreBtn">
+                        <span>Meer Projecten Laden</span>
+                        <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- Background overlay -->
+            <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity" aria-hidden="true" id="modalOverlay"></div>
+
+            <!-- Modal panel -->
+            <div class="inline-block align-bottom bg-background rounded-lg text-left overflow-hidden shadow-modal transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
+                <!-- Modal Header -->
+                <div class="bg-surface px-6 py-4 border-b border-border-light flex items-center justify-between">
+                    <h2 id="modal-title" class="text-2xl font-heading font-semibold text-text-primary">Project Details</h2>
+                    <button type="button" class="text-text-tertiary hover:text-text-primary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md p-2" id="closeModal" aria-label="Sluit modal">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Modal Content -->
+                <div class="px-6 py-6" id="modalContent">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-modal opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 z-40" aria-label="Terug naar boven">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Project data
+        const projectData = {
+            'cosmic-figures': {
+                title: 'Cosmic Figures',
+                category: 'Digital Art & Illustration',
+                year: '2025',
+                client: 'Persoonlijk Project',
+                image: '../assets/images/IMG_0900-1755301505843.jpeg',
+                description: 'Een mystieke illustratie van twee figuren tegen een kosmische achtergrond. Dit artwork toont de kracht van digitale illustratie met aandacht voor detail, dramatische belichting en karakterontwerp.',
+                challenge: 'Het creëren van een compositioneel sterk beeld dat zowel mystiek als toegankelijk is. De uitdaging lag in het balanceren van donkere elementen met het behoud van duidelijkheid in de details.',
+                solution: 'Door gebruik te maken van contrasterend licht en strategische kleuraccenten (de blauwe en goudgele ogen) ontstaat er een focal point die de kijker direct aantrekt. De sterrenhemel vormt een dramatische backdrop zonder afleiding te veroorzaken.',
+                results: 'Een krachtig artwork dat emotie en technische vaardigheid combineert. Het werk toont beheersing van licht/schaduw technieken en karakterontwerp principes.',
+                testimonial: '"Dit artwork laat zien hoe digitale kunst emotie kan overbrengen door middel van kleur en compositie. De details in de ogen en de mystieke sfeer maken dit tot een memorabel stuk." - Portfolio Review',
+                technologies: ['Digital Art', 'Character Design', 'Color Theory', 'Composition', 'Lighting'],
+                features: [
+                    'Dramatische belichting en schaduwwerking',
+                    'Expressieve ogen als focal points',
+                    'Kosmische achtergrond met sterrenveld',
+                    'Gedetailleerde karaktertekening',
+                    'Mystieke sfeer en compositie'
+                ]
+            },
+            'ecommerce-dashboard': {
+                title: 'E-commerce Dashboard',
+                category: 'UI/UX Design & Frontend Development',
+                year: '2025',
+                client: 'TechCorp Solutions',
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3',
+                description: 'Een intuïtieve dashboard interface voor e-commerce beheer met real-time analytics en toegankelijke data visualisatie. Het project richtte zich op het creëren van een gebruiksvriendelijke interface die complexe data begrijpelijk maakt voor niet-technische gebruikers.',
+                challenge: 'De uitdaging was om complexe e-commerce data te presenteren op een manier die zowel overzichtelijk als actionable is. Gebruikers hadden moeite met het interpreteren van verkoopcijfers en trends in het oude systeem.',
+                solution: 'Door gebruik te maken van progressive disclosure en intuïtieve data visualisatie hebben we een dashboard gecreëerd dat gebruikers stap voor stap door hun data leidt. Kleurgecodeerde metrics en interactieve grafieken maken trends direct zichtbaar.',
+                results: '40% verbetering in gebruikerstevredenheid, 25% snellere besluitvorming door managers, en 100% WCAG AA compliance voor toegankelijkheid.',
+                testimonial: '"Het nieuwe dashboard heeft onze manier van werken compleet veranderd. We kunnen nu in één oogopslag zien wat er speelt en snel actie ondernemen." - Sarah van der Berg, Operations Manager',
+                technologies: ['React', 'D3.js', 'TypeScript', 'Tailwind CSS', 'WCAG AA'],
+                features: [
+                    'Real-time data synchronisatie',
+                    'Toegankelijke kleurenschema\'s',
+                    'Responsive design voor alle apparaten',
+                    'Keyboard navigatie ondersteuning',
+                    'Exportfunctionaliteit voor rapporten'
+                ]
+            },
+            'climate-tracker': {
+                title: 'Climate Data Tracker',
+                category: 'Data Visualisatie & Frontend Development',
+                year: '2024',
+                client: 'Green Future Institute',
+                image: 'https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png',
+                description: 'Interactieve klimaatdata visualisatie met real-time updates en toegankelijke grafieken voor beleidsmakers. Het platform helpt bij het begrijpen van klimaattrends en het nemen van data-gedreven beslissingen.',
+                challenge: 'Klimaatdata is complex en vaak moeilijk te interpreteren voor beleidsmakers zonder wetenschappelijke achtergrond. De bestaande tools waren te technisch en niet toegankelijk.',
+                solution: 'We hebben een intuïtieve interface ontwikkeld die complexe klimaatdata vertaalt naar begrijpelijke visualisaties. Interactive storytelling helpt gebruikers de data in context te plaatsen.',
+                results: '60% meer engagement van beleidsmakers met klimaatdata, 35% snellere rapportage, en internationale erkenning voor toegankelijk design.',
+                testimonial: '"Deze tool heeft onze communicatie over klimaatverandering revolutionair verbeterd. Eindelijk kunnen we data op een begrijpelijke manier presenteren." - Dr. Emma Jansen, Klimaatonderzoeker',
+                technologies: ['Vue.js', 'Chart.js', 'Node.js', 'WebGL', 'PWA'],
+                features: [
+                    'Real-time data feeds van klimaatstations',
+                    'Interactieve kaarten en tijdlijnen',
+                    'Toegankelijke kleurenblinde-vriendelijke palette',
+                    'Offline functionaliteit',
+                    'Multi-language ondersteuning'
+                ]
+            },
+            'inclusive-banking': {
+                title: 'Inclusive Banking App',
+                category: 'Toegankelijkheid & UI/UX Design',
+                year: '2024',
+                client: 'Progressive Bank',
+                image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg',
+                description: 'Een volledig toegankelijke banking app ontworpen voor gebruikers met verschillende beperkingen en behoeften. Focus op inclusief design en gebruiksvriendelijkheid voor iedereen.',
+                challenge: 'Traditionele banking apps zijn vaak niet toegankelijk voor gebruikers met visuele, auditieve of motorische beperkingen. Dit sluit een grote groep mensen uit van digitale bankdiensten.',
+                solution: 'Door intensieve gebruikerstests met mensen met verschillende beperkingen hebben we een app ontwikkeld die WCAG AAA standaarden overtreft. Voice commands, haptic feedback en aanpasbare interfaces maken banking voor iedereen mogelijk.',
+                results: '300% toename in app-gebruik door gebruikers met beperkingen, 95% tevredenheidsscore, en industry award voor inclusive design.',
+                testimonial: '"Voor het eerst kan ik zelfstandig mijn bankzaken regelen via een app. Het voice interface werkt perfect en geeft me de onafhankelijkheid die ik zocht." - Mark Visser, App gebruiker',
+                technologies: ['React Native', 'Voice UI', 'Haptic Feedback', 'WCAG AAA', 'Biometric Auth'],
+                features: [
+                    'Voice-controlled interface',
+                    'Haptic feedback voor alle acties',
+                    'High contrast en grote tekst opties',
+                    'Screen reader optimalisatie',
+                    'Eenvoudige navigatie met één hand'
+                ]
+            },
+            'startup-website': {
+                title: 'Tech Startup Website',
+                category: 'Frontend Development & UI/UX Design',
+                year: '2024',
+                client: 'InnovateLab',
+                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
+                description: 'Een moderne, responsieve website voor een tech startup met focus op conversie en gebruikerservaring. Het ontwerp combineert storytelling met technische excellentie.',
+                challenge: 'De startup had moeite om hun complexe technologie uit te leggen aan potentiële investeerders en klanten. De oude website was te technisch en niet overtuigend genoeg.',
+                solution: 'We hebben een verhaal-gedreven aanpak gebruikt waarbij complexe technologie wordt uitgelegd door middel van interactieve demo\'s en duidelijke visualisaties. Micro-interactions leiden gebruikers door de customer journey.',
+                results: '150% toename in demo-aanvragen, 80% verbetering in time-on-site, en succesvolle Series A funding van €2M.',
+                testimonial: '"De nieuwe website heeft ons geholpen om onze visie duidelijk te communiceren. Investeerders begrijpen nu eindelijk wat we doen." - Lisa Chen, CEO InnovateLab',
+                technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Vercel', 'Analytics'],
+                features: [
+                    'Interactieve product demo\'s',
+                    'Geoptimaliseerde conversie funnels',
+                    'A/B testing voor key pages',
+                    'SEO optimalisatie',
+                    'Performance monitoring'
+                ]
+            },
+            'health-analytics': {
+                title: 'Health Analytics Dashboard',
+                category: 'Data Visualisatie & Toegankelijkheid',
+                year: '2023',
+                client: 'MedTech Solutions',
+                image: 'https://images.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_1280.png',
+                description: 'Toegankelijke gezondheidsdata dashboard voor zorgverleners met real-time patiënt monitoring. HIPAA-compliant en ontworpen voor gebruik in drukke ziekenhuisomgevingen.',
+                challenge: 'Zorgverleners hadden moeite met het snel interpreteren van patiëntdata uit verschillende systemen. Kritieke informatie ging verloren in complexe interfaces.',
+                solution: 'Een clean, prioriteit-gedreven interface die kritieke patiëntinformatie prominent weergeeft. Kleurgecodeerde alerts en intuïtieve grafieken helpen bij snelle besluitvorming.',
+                results: '30% snellere diagnoses, 50% minder medische fouten door betere data presentatie, en 100% HIPAA compliance.',
+                testimonial: '"Dit dashboard heeft onze workflow enorm verbeterd. We kunnen nu in seconden zien wat belangrijk is voor elke patiënt." - Dr. Peter Bakker, Cardioloog',
+                technologies: ['Angular', 'Highcharts', 'HIPAA Compliance', 'Real-time APIs', 'PWA'],
+                features: [
+                    'Real-time vitale functies monitoring',
+                    'Prioriteit-gebaseerde alerts',
+                    'Cross-platform synchronisatie',
+                    'Offline functionaliteit voor kritieke data',
+                    'Audit trail voor compliance'
+                ]
+            },
+            'education-platform': {
+                title: 'Education Platform',
+                category: 'UI/UX Design, Frontend & Toegankelijkheid',
+                year: '2023',
+                client: 'LearnForward Academy',
+                image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg',
+                description: 'Inclusief online leerplatform met adaptieve interface en ondersteuning voor diverse leerstijlen. Ontworpen om onderwijs toegankelijk te maken voor alle studenten.',
+                challenge: 'Traditionele e-learning platforms zijn vaak niet geschikt voor studenten met leerproblemen of beperkingen. Veel studenten vielen uit omdat de interface te complex was.',
+                solution: 'Een adaptieve interface die zich aanpast aan individuele leerstijlen en behoeften. Multimodale content en aanpasbare navigatie zorgen voor een persoonlijke leerervaring.',
+                results: '40% minder uitval, 60% verbetering in leerresultaten voor studenten met leerproblemen, en 95% tevredenheidsscore van docenten.',
+                testimonial: '"Eindelijk een platform dat rekening houdt met alle studenten. Mijn zoon met dyslexie kan nu zelfstandig leren dankzij de aanpasbare interface." - Maria Gonzalez, Ouder',
+                technologies: ['Vue.js', 'PWA', 'WCAG AA', 'Adaptive UI', 'Machine Learning'],
+                features: [
+                    'Adaptieve interface gebaseerd op leerstijl',
+                    'Text-to-speech en speech-to-text',
+                    'Aanpasbare lettertypen en kleuren',
+                    'Progress tracking met visualisaties',
+                    'Offline content synchronisatie'
+                ]
+            }
+        };
+
+        // DOM elements
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const projectModal = document.getElementById('projectModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalTitle = document.getElementById('modal-title');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const backToTopBtn = document.getElementById('backToTop');
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeFilters();
+            initializeProjectCards();
+            initializeModal();
+            initializeBackToTop();
+            initializeMobileMenu();
+            initializeAccessibility();
+        });
+
+        // Filter functionality
+        function initializeFilters() {
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Update active state
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-selected', 'false');
+                        btn.classList.add('bg-surface', 'text-text-secondary', 'border', 'border-border');
+                        btn.classList.remove('bg-primary', 'text-white');
+                    });
+                    
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+                    this.classList.remove('bg-surface', 'text-text-secondary', 'border', 'border-border');
+                    this.classList.add('bg-primary', 'text-white');
+                    
+                    // Filter projects
+                    filterProjects(filter);
+                });
+            });
+
+            // Set initial active state
+            const activeBtn = document.querySelector('.filter-btn.active');
+            if (activeBtn) {
+                activeBtn.classList.add('bg-primary', 'text-white');
+                activeBtn.classList.remove('bg-surface', 'text-text-secondary', 'border', 'border-border');
+            }
+
+            // Set initial inactive states
+            filterButtons.forEach(btn => {
+                if (!btn.classList.contains('active')) {
+                    btn.classList.add('bg-surface', 'text-text-secondary', 'border', 'border-border');
+                    btn.classList.remove('bg-primary', 'text-white');
+                }
+            });
+        }
+
+        function filterProjects(filter) {
+            projectCards.forEach((card, index) => {
+                const categories = card.dataset.categories.split(' ');
+                const shouldShow = filter === 'all' || categories.includes(filter);
+                
+                if (shouldShow) {
+                    card.style.display = 'block';
+                    card.style.animationDelay = `${index * 60}ms`;
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('animate-fade-in');
+                }
+            });
+        }
+
+        // Project cards functionality
+        function initializeProjectCards() {
+            projectCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const projectId = this.dataset.project;
+                    openProjectModal(projectId);
+                });
+
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const projectId = this.dataset.project;
+                        openProjectModal(projectId);
+                    }
+                });
+            });
+        }
+
+        // Modal functionality
+        function initializeModal() {
+            closeModalBtn.addEventListener('click', closeProjectModal);
+            modalOverlay.addEventListener('click', closeProjectModal);
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !projectModal.classList.contains('hidden')) {
+                    closeProjectModal();
+                }
+            });
+        }
+
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            modalContent.innerHTML = generateModalContent(project);
+            
+            projectModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Focus management
+            closeModalBtn.focus();
+        }
+
+        function closeProjectModal() {
+            projectModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function generateModalContent(project) {
+            return `
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Project Image -->
+                    <div class="space-y-4">
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="${project.image}" 
+                                 alt="${project.title} Interface" 
+                                 class="w-full h-64 lg:h-80 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;">
+                        </div>
+                        
+                        <!-- Project Meta -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="font-semibold text-text-secondary">Klant:</span>
+                                <p class="text-text-primary">${project.client}</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-text-secondary">Jaar:</span>
+                                <p class="text-text-primary">${project.year}</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Technologies -->
+                        <div>
+                            <h4 class="font-semibold text-text-secondary mb-2">Technologieën</h4>
+                            <div class="flex flex-wrap gap-2">
+                                ${project.technologies.map(tech => `
+                                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">${tech}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="space-y-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-accent-50 text-accent text-sm rounded-full mb-2">${project.category}</span>
+                            <p class="text-text-secondary leading-relaxed">${project.description}</p>
+                        </div>
+                        
+                        <!-- Challenge -->
+                        <div>
+                            <h4 class="font-heading font-semibold text-lg mb-2 text-text-primary">Uitdaging</h4>
+                            <p class="text-text-secondary leading-relaxed">${project.challenge}</p>
+                        </div>
+                        
+                        <!-- Solution -->
+                        <div>
+                            <h4 class="font-heading font-semibold text-lg mb-2 text-text-primary">Oplossing</h4>
+                            <p class="text-text-secondary leading-relaxed">${project.solution}</p>
+                        </div>
+                        
+                        <!-- Results -->
+                        <div>
+                            <h4 class="font-heading font-semibold text-lg mb-2 text-text-primary">Resultaten</h4>
+                            <p class="text-success leading-relaxed">${project.results}</p>
+                        </div>
+                        
+                        <!-- Features -->
+                        <div>
+                            <h4 class="font-heading font-semibold text-lg mb-2 text-text-primary">Key Features</h4>
+                            <ul class="space-y-2">
+                                ${project.features.map(feature => `
+                                    <li class="flex items-start space-x-2">
+                                        <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        <span class="text-text-secondary">${feature}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <!-- Testimonial -->
+                        <div class="bg-surface p-4 rounded-lg border-l-4 border-primary">
+                            <p class="text-text-secondary italic mb-2">${project.testimonial}</p>
+                        </div>
+                        
+                        <!-- CTA -->
+                        <div class="flex flex-col sm:flex-row gap-3 pt-4">
+                            <a href="contact_section.html" class="btn-primary inline-flex items-center justify-center">
+                                <span>Start Een Project</span>
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                            <button class="btn-secondary" onclick="closeProjectModal()">Sluiten</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Back to top functionality
+        function initializeBackToTop() {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > window.innerHeight * 0.75) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Mobile menu functionality
+        function initializeMobileMenu() {
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        }
+
+        // Accessibility enhancements
+        function initializeAccessibility() {
+            // Add focus visible styles
+            const focusableElements = document.querySelectorAll('button, a, input, [tabindex]');
+            focusableElements.forEach(element => {
+                element.addEventListener('focus', function() {
+                    this.classList.add('focus-visible');
+                });
+                element.addEventListener('blur', function() {
+                    this.classList.remove('focus-visible');
+                });
+            });
+
+            // Announce filter changes to screen readers
+            const announcer = document.createElement('div');
+            announcer.setAttribute('aria-live', 'polite');
+            announcer.setAttribute('aria-atomic', 'true');
+            announcer.className = 'sr-only';
+            document.body.appendChild(announcer);
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.textContent.trim();
+                    announcer.textContent = `Filter gewijzigd naar: ${filter}`;
+                });
+            });
+        }
+
+        // Performance optimization
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--transition-smooth', '0ms');
+            document.documentElement.style.setProperty('--transition-quick', '0ms');
+        }
+
+        // Load more functionality (placeholder)
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            this.innerHTML = '<span>Alle projecten geladen</span>';
+            this.disabled = true;
+            this.classList.add('opacity-50', 'cursor-not-allowed');
+        });
+    </script>
+
+    <style>
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .animate-fade-in {
+                animation: none;
+            }
+            
+            .transition-all,
+            .transition-colors,
+            .transition-transform {
+                transition: none !important;
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* minimal overrides */
+body{
+  background: linear-gradient(135deg,#1E5AF6 0%, #FACC15 100%);
+  min-height: 100vh;
+}
+.btn-primary{
+  background: linear-gradient(90deg,#1E5AF6,#FACC15);
+  color:#0B0B0B;
+}

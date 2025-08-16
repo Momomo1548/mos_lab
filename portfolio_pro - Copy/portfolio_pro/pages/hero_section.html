@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pro - Hero Section</title>
+    <meta name="description" content="Portfolio Pro - Where creativity meets code. Showcasing innovative design solutions and technical excellence." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/overrides.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio7729back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border-light">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_section.html" class="flex items-center space-x-2 group" aria-label="Portfolio Pro Home">
+                        <svg class="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 16L16 4L28 16L16 28L4 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16L16 12L20 16L16 20L12 16Z" fill="currentColor"/>
+                        </svg>
+                        <span class="font-heading font-bold text-xl text-primary">Portfolio Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_section.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm transition-colors duration-300" aria-current="page">Home</a>
+                        <a href="about_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Over Mij</a>
+                        <a href="projects_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projecten</a>
+                        <a href="contact_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                        <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Stijlgids</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-300" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open hoofdmenu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                    <a href="hero_section.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base" aria-current="page">Home</a>
+                    <a href="about_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Over Mij</a>
+                    <a href="projects_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Projecten</a>
+                    <a href="contact_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Contact</a>
+                    <a href="style_guide_overlay.html" class="text-text-tertiary hover:text-text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Stijlgids</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-yellow-200 via-yellow-300 to-yellow-400" role="banner">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-20">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)"/>
+                </svg>
+            </div>
+
+            <!-- Diagonal stripes overlay -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="stripes" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+                            <rect width="4" height="8" fill="currentColor"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#stripes)"/>
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                        <!-- Content Column -->
+                        <div class="text-center lg:text-left space-y-8 animate-slide-in-left">
+                            <!-- Main Headline -->
+                            <div class="space-y-4">
+                                <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight">
+                                    <span class="block text-text-primary">Waar creativiteit</span>
+                                    <span class="block text-gradient">code ontmoet</span>
+                                </h1>
+                                <p class="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                                    Welkom op mijn portfolio, ik hoop dat je me hier leert kennen
+                                </p>
+                            </div>
+
+                            <!-- Key Skills Tags -->
+                            <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+                                <span class="px-4 py-2 bg-primary-50 text-primary rounded-full text-sm font-medium border border-primary-100">UI/UX Design</span>
+                                <span class="px-4 py-2 bg-accent-50 text-accent rounded-full text-sm font-medium border border-accent-100">Frontend Development</span>
+                                <span class="px-4 py-2 bg-success-50 text-success rounded-full text-sm font-medium border border-success-100">Data Visualisatie</span>
+                                <span class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium border border-border">Toegankelijkheid</span>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="projects_section.html" class="btn-accent inline-flex items-center justify-center group">
+                                    <span>Bekijk Mijn Werk</span>
+                                    <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                                <a href="contact_section.html" class="btn-secondary inline-flex items-center justify-center group">
+                                    <span>Laten We Praten</span>
+                                    <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- Social Proof -->
+                            <div class="pt-8 border-t border-border-light">
+                                <p class="text-sm text-text-tertiary mb-4">Vertrouwd door innovatieve bedrijven</p>
+                                <div class="flex items-center justify-center lg:justify-start space-x-8 opacity-60">
+                                    <div class="text-text-tertiary font-semibold text-sm">TechCorp</div>
+                                    <div class="text-text-tertiary font-semibold text-sm">DesignStudio</div>
+                                    <div class="text-text-tertiary font-semibold text-sm">StartupLab</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Animated SVG Column -->
+                        <div class="flex justify-center lg:justify-end animate-slide-in-right">
+                            <div class="relative w-full max-w-lg">
+                                <!-- Main SVG Animation -->
+                                <svg class="w-full h-auto" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-animation-title">
+                                    <title id="hero-animation-title">Geanimeerde lijn die data en design verbindt</title>
+                                    <defs>
+                                        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#1E5AF6;stop-opacity:1"/>
+                                            <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1"/>
+                                            <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1"/>
+                                        </linearGradient>
+                                        <filter id="glow">
+                                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                            <feMerge> 
+                                                <feMergeNode in="coloredBlur"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    
+                                    <!-- Background Grid -->
+                                    <g opacity="0.1">
+                                        <defs>
+                                            <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1E5AF6" stroke-width="0.5"/>
+                                            </pattern>
+                                        </defs>
+                                        <rect width="100%" height="100%" fill="url(#smallGrid)"/>
+                                    </g>
+
+                                    <!-- Data Points -->
+                                    <g class="data-points">
+                                        <circle cx="80" cy="120" r="4" fill="#1E5AF6" opacity="0.7">
+                                            <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+                                        </circle>
+                                        <circle cx="150" cy="80" r="3" fill="#FF6B35" opacity="0.7">
+                                            <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+                                        </circle>
+                                        <circle cx="320" cy="150" r="5" fill="#10B981" opacity="0.7">
+                                            <animate attributeName="r" values="5;7;5" dur="1.8s" repeatCount="indefinite"/>
+                                        </circle>
+                                        <circle cx="280" cy="280" r="4" fill="#F59E0B" opacity="0.7">
+                                            <animate attributeName="r" values="4;6;4" dur="2.2s" repeatCount="indefinite"/>
+                                        </circle>
+                                    </g>
+
+                                    <!-- Main Animated Line Path -->
+                                    <path id="mainLine" d="M50,200 Q100,100 200,150 T350,200 Q320,250 280,280 Q200,320 120,300 Q80,250 50,200" fill="none" stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" stroke-dasharray="1000" stroke-dashoffset="1000">
+                                        <animate attributeName="stroke-dashoffset" values="1000;0;1000" dur="4s" repeatCount="indefinite"/>
+                                    </path>
+
+                                    <!-- Secondary Lines -->
+                                    <path d="M100,50 L150,100 L200,80 L250,120" fill="none" stroke="#1E5AF6" stroke-width="2" opacity="0.5" stroke-dasharray="200" stroke-dashoffset="200">
+                                        <animate attributeName="stroke-dashoffset" values="200;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+                                    </path>
+
+                                    <path d="M300,100 L320,150 L350,130 L380,170" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.5" stroke-dasharray="150" stroke-dashoffset="150">
+                                        <animate attributeName="stroke-dashoffset" values="150;0" dur="2.5s" begin="1.5s" repeatCount="indefinite"/>
+                                    </path>
+
+                                    <!-- Interactive Elements -->
+                                    <g class="interactive-nodes">
+                                        <circle cx="200" cy="150" r="8" fill="#1E5AF6" opacity="0.8">
+                                            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                                        </circle>
+                                        <circle cx="280" cy="280" r="6" fill="#FF6B35" opacity="0.8">
+                                            <animate attributeName="opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"/>
+                                        </circle>
+                                    </g>
+
+                                    <!-- Text Labels -->
+                                    <text x="200" y="140" text-anchor="middle" class="fill-primary text-xs font-mono opacity-70">DATA</text>
+                                    <text x="280" y="295" text-anchor="middle" class="fill-accent text-xs font-mono opacity-70">DESIGN</text>
+                                </svg>
+
+                                <!-- Floating Elements -->
+                                <div class="absolute -top-4 -right-4 w-16 h-16 bg-primary-50 rounded-full flex items-center justify-center animate-bounce" style="animation-delay: 0.5s;">
+                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+
+                                <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-accent-50 rounded-full flex items-center justify-center animate-pulse" style="animation-delay: 1s;">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="about_section.html" class="flex flex-col items-center text-text-tertiary hover:text-primary transition-colors duration-300" aria-label="Scroll naar beneden">
+                    <span class="text-sm font-medium mb-2">Scroll naar beneden</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-modal opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 z-40" aria-label="Terug naar boven">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Back to top functionality
+            const backToTopButton = document.getElementById('backToTop');
+            
+            if (backToTopButton) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > window.innerHeight * 0.75) {
+                        backToTopButton.classList.remove('opacity-0', 'invisible');
+                        backToTopButton.classList.add('opacity-100', 'visible');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'invisible');
+                        backToTopButton.classList.remove('opacity-100', 'visible');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add stagger animation to skill tags
+            const skillTags = document.querySelectorAll('.flex-wrap span');
+            skillTags.forEach((tag, index) => {
+                tag.style.animationDelay = `${index * 0.1}s`;
+                tag.classList.add('animate-fade-in');
+            });
+        });
+
+        // Performance optimization for animations
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--transition-smooth', '0ms');
+            document.documentElement.style.setProperty('--transition-quick', '0ms');
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
